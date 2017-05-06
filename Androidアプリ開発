@@ -1,0 +1,54 @@
+【インストールについて】
+
+==============================================================================
+AndroidStudio
+https://developer.android.com/studio/index.html?hl=ja
+
+※JDKが必要
+
+エミュレータを使うために
+HAXM(ハッサム)
+  エミュレータを高速かするためのツール（VT-xを使う）
+VT-x（intel バーチャル・テクノロジー）
+  ハードウェアの仮想化を手助けするインテルの命令セット？
+
+１．ハッサムをインストールする
+※Android SDK Managerのチエックをしただけではダウンロードするだけでインストールはされていない。
+　インストールするにはダウンロードされたインストーラーを探して実行する必要がある
+※BIOSの設定でVT-xが有効になっている必要がある。設定方法、名前はBIOSによって異なる
+※WindowsOsのHyper-V機能が有効になっているとVT-xが使用できないため、無効にする必要がある
+
+==============================================================================
+Eclipse 4.5 Mars
+http://mergedoc.osdn.jp/
+
+アーカイブを取得して展開するだけ。
+実際には拡張子も.exeになっていて実行するだけだった。
+==============================================================================
+java
+
+jre (java runtime environment)
+jdk (java のsdk※SDKという言葉はJavaにかぎらず一般的に用いられる)
+  jdkは中にjreを含んでいる。じゃあ、なんでJreのフォルダをもつの？
+
+
+
+==============================================================================
+JVM と、コアパッケージと呼ばれる標準クラスのライブラリを含めて、 Java プラットフォーム
+Java プラットフォームの最も標準的なものが J2SE (Java 2 Platform, Standard Edition) になります。
+
+Java SE 7以前...%SystemRoot%(たいていはC:\Windows)以下のSystem32フォルダーに、パブリックJREのjava.exe, javaw.exe, javaws.exe(32ビット版JREのみ)をコピーする。通常、システム環境変数(*1)PATHにはこのフォルダーが最初から含まれるため、java.exeをコマンド名のみで実行できる
+Java SE 8以降...%ProgramData%(たいていはC:\ProgramData)以下のOracle\Java\javapathフォルダーに、パブリックJREのjava.exe, javaw.exe, javaws.exeのシンボリックリンクを作成(あるいは更新)する。さらに、システム環境変数PATHにこのフォルダーが含まれていない場合は、先頭に追加する。その結果、java.exeをコマンド名のみで実行できる
+
+
+
+
+
+MySQL Community Server
+http://dev.mysql.com/downloads/mysql/
+
+MySQL JDBCドライバー
+https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-5.1.40.zip
+
+ER図設計ツールA5:SQL Mk-2
+http://www.vector.co.jp/soft/dl/winnt/business/se422726.html

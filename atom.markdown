@@ -1,5 +1,11 @@
 # Atom
 
+## 公式ページ
+  https://atom.io/
+### パッケージ作成のときに役立つリファレンス
+  https://atom.io/docs/api/v1.14.4/AtomEnvironment
+
+
 ## 構築手順
 1. プログラミングに適したフォントをインストール
   1. RictyDiminished-Regular.ttfをダウンロード
